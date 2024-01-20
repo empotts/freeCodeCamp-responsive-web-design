@@ -13,21 +13,44 @@
         This is the description of the survey.
     </p>
     <form id="survey-form">
-        <label for="" id="name-label">Name:<input type="text" id="name" placeholder="Enter your name"></label>
-        <label for="" id="email-label">Email:<input type="email" id="email" placeholder="Enter your email"></label>
-        <label for="" id="number-label">Age <input type="number" id="'number" min="13" max="120" placeholder="Age"></label>
+        <label for="" id="name-label">Name:<input type="text" id="name" placeholder="Enter your name" required></label>
+        <label for="" id="email-label">Email:<input type="email" id="email" placeholder="Enter your email" required></label>
+        <label for="" id="number-label">Age: <input type="number" id="number" min="13" max="120" placeholder="Age" required></label>
         <select id="dropdown">
-            <option value="">(select which sport)</option>
-            <option value="1">Football</option>
-            <option value="2">Basketball</option>
-            <option value="3">Baseball</option>
+            <option value="">(select education level)</option>
+            <option value="1">High School</option>
+            <option value="2">College</option>
+            <option value="3">Graduate School</option>
             <option value="2">Other</option>
         </select>
         <fieldset>
             Did you play this sport in high school?
-            <label><input type="radio" checked name="played"></input>Yes</label>
-            <label><input type="radio" name="played"></input> No</label>
+            <label><input value="1" type="radio" checked name="played"></input>Yes</label>
+            <label><input value=2 type="radio" name="played"></input> No</label>
+
         </fieldset>
+
+        <fieldset>
+            Which Sports have you played at the high school level or above?
+
+            <label for=""><input type="checkbox" name="" id="" value="1">Football</label>
+            <label for=""><input type="checkbox" name="" id="" value="2">Basketball</label>
+            <label for=""><input type="checkbox" name="" id="" value="3">Baseball</label>
+            <label for=""><input type="checkbox" name="" id="" value="4">Soccer</label>
+            <label for=""><input type="checkbox" name="" id="" value="5">Other</label>
+        </fieldset>
+
+        <fieldset> 
+            Questions, Comments, or Concerns:
+
+            <textarea>
+                
+            </textarea>
+        </fieldset>
+
+
+
+        <label for=""><input id="submit" type="submit" name="" id=""> </label>
     </form>
   </body>
 
